@@ -33,3 +33,4 @@
 /config/credentials.yml.enc
 /.idea
 /config/secrets.yml
+/.directory
