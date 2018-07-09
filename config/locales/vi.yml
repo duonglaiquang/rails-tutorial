@@ -1,0 +1,28 @@
+vi:
+  application:
+    ruby_on_rails: "Web mẫu Ruby on Rails"
+
+  static_pages:
+    home:
+      title: "Trang chủ"
+      home_page: "Đây là trang chủ %{link}"
+      ruby_on_rails: "hướng dẫn lập trình Ruby on Rails"
+      sample_app: "Web mẫu"
+
+    about:
+      title: "Thông tin"
+      the: "%{ruby_link} là %{book_link} và %{screen_link} để dạy làm web bằng %{ruby_link}"
+      book: "cuốn sách"
+      screencast: "bla bla bla"
+      sample_app: "Đây là chương trình mẫu"
+
+    help:
+      title: "Hỗ trợ"
+      get_help: "Hỗ trợ Ruby on Rails cơ bản tại %{help_link}"
+      help_section: "Rails cơ bản"
+      get_help_app: "Để được giúp đỡ web cơ bản xem tại %{app_help}"
+
+    contact:
+      title: "Liên lạc"
+      get_contact: "Liên lạc với chúng tôi tại %{contact_link}"
+      contact_page: "đây"

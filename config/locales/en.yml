@@ -1,2 +1,29 @@
 en:
-  hello: "Hello world"
+  application:
+    ruby_on_rails: "Ruby on Rails Tutorial Sample App"
+
+  static_pages:
+    home:
+      title: "Home"
+      home_page: "This is the home page for the %{link} sample application"
+      ruby_on_rails: "Ruby on Rails Tutorial"
+      sample_app: "Sample App"
+
+    about:
+      title: "About"
+      the: "The %{ruby_link} is a %{book_link} and %{screen_link} to teach web development with %{ruby_link}"
+      book: "book"
+      screencast: "screencast seri"
+      sample_app: "This is the sample application for the tutorial"
+
+    help:
+      title: "Help"
+      get_help: "Get help on the Ruby on Rails Tutorial at the %{help_link}"
+      help_section: "Rails Tutorial help section"
+      get_help_app: "To get help on this sample app, see the %{app_help}"
+      ruby_on_rails: "Ruby on Rails Tutorial"
+
+    contact:
+      title: "Contact"
+      get_contact: "Contact the Ruby on Rails Tutorial about the sample app at the %{contact_link}"
+      contact_page: "contact page"

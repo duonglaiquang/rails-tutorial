@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>RailsTutorial</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title><%= yield(:title) %> | <%= t "application.ruby_on_rails" %> </title>
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag "application", media: "all",
+                          "data-turbolinks-track": "reload" %>
+  <%= javascript_include_tag "application", "data-turbolinks-track": "reload" %>
+</head>
 
-    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track": "reload" %>
-    <%= javascript_include_tag "application", "data-turbolinks-track": "reload" %>
-  </head>
-
-  <body>
-    <%= yield %>
-  </body>
+<body>
+<%= link_to "English", locale: "en" %>
+<%= link_to "Vietnamese", locale: "vi" %>
+<%= yield %>
+</body>
 </html>
