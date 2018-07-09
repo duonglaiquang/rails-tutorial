@@ -1,0 +1,10 @@
+<% provide :title, t(".title") %>
+<h1>
+  <% t ".title" %></h1>
+<p>
+  <%= t(".the", ruby_link: link_to("Ruby on Rails", "http://www.railstutorial.org/"),
+        book_link: link_to(t(".book"), "http://www.railstutorial.org/book"),
+        screen_link: link_to(t(".screencast"), "http://screencasts.railstutorial.org/")).html_safe %>
+
+  <%= t ".sample_app" %>
+</p>

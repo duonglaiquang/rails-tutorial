@@ -1,0 +1,6 @@
+<% provide :title, t(".title") %>
+<h1>
+  <% t ".title" %></h1>
+<p>
+  <%= t(".get_contact", contact_link: link_to(t(".contact_page"), "http://www.railstutorial.org/contact")).html_safe %>
+</p>
