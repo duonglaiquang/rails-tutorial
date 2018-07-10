@@ -8,6 +8,7 @@ en:
       home_page: "This is the home page for the %{link} sample application"
       ruby_on_rails: "Ruby on Rails Tutorial"
       sample_app: "Sample App"
+      sign_up: "Sign up now!"
 
     about:
       title: "About"
@@ -27,3 +28,8 @@ en:
       title: "Contact"
       get_contact: "Contact the Ruby on Rails Tutorial about the sample app at the %{contact_link}"
       contact_page: "contact page"
+
+  users:
+    new:
+      title: "Sign up"
+      info: "This will be a sign up page for new users."

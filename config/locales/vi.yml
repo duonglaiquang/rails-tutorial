@@ -8,6 +8,7 @@ vi:
       home_page: "Đây là trang chủ %{link}"
       ruby_on_rails: "hướng dẫn lập trình Ruby on Rails"
       sample_app: "Web mẫu"
+      sign_up: "Đăng kí ngay!"
 
     about:
       title: "Thông tin"
@@ -26,3 +27,8 @@ vi:
       title: "Liên lạc"
       get_contact: "Liên lạc với chúng tôi tại %{contact_link}"
       contact_page: "đây"
+
+  users:
+    new:
+      title: "Đăng kí"
+      info: "Đăng kí thành viên mới tại đây."
