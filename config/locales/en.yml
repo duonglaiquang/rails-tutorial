@@ -1,6 +1,7 @@
 en:
   application:
     ruby_on_rails: "Ruby on Rails Tutorial Sample App"
+    user_error: "User not found"
 
   static_pages:
     home:
@@ -33,3 +34,8 @@ en:
     new:
       title: "Sign up"
       info: "This will be a sign up page for new users."
+      name: "name"
+      password: "password"
+      confirmation: "Confirmation"
+      create: "Create my account"
+      success: "Welcome to the Sample App!"

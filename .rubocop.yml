@@ -2,7 +2,6 @@
 # in separate files. This file adds all other parameters apart from Enabled.
 
 # Put the following files into the same directory as this file.
-# frozen_string_literal: true
 inherit_from:
   - .rubocop_enabled.yml
   - .rubocop_disabled.yml

@@ -1,5 +1,4 @@
 # These are all the cops that are disabled in the default configuration.
-# frozen_string_literal: true
 
 Style/FrozenStringLiteralComment:
   Description: >-
@@ -65,6 +64,12 @@ Layout/AlignArray:
   Description: >-
                  Align the elements of an array literal if they span more than
                  one line.
+  Enabled: false
+
+Layout/SpaceBeforeFirstArg:
+  Description: >-
+                 Checks that exactly one space is used between a method name
+                 and the first argument for method calls without parentheses.
   Enabled: false
 
 Style/UnneededPercentQ:
