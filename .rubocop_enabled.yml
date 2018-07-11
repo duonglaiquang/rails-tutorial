@@ -1,5 +1,4 @@
 # These are all the cops that are enabled in the default configuration.
-# frozen_string_literal: true
 
 Layout/AccessModifierIndentation:
   Description: Check indentation of private/protected visibility modifiers.
@@ -147,7 +146,7 @@ Layout/EmptyLineBetweenDefs:
   Enabled: true
 
 Layout/EmptyLines:
-  Description: "Dont use several empty lines in a row."
+  Description: "Don't use several empty lines in a row."
   Enabled: true
 
 Layout/EmptyLinesAroundAccessModifier:
@@ -346,7 +345,7 @@ Naming/BinaryOperatorParameterName:
 
 Style/ParenthesesAroundCondition:
   Description: >-
-                 Dont use parentheses around the condition of an
+                 Don't use parentheses around the condition of an
                  if/unless/while.
   Enabled: true
 
@@ -371,7 +370,7 @@ Style/RaiseArgs:
   Enabled: true
 
 Style/RedundantBegin:
-  Description: "Dont use begin blocks when they are not needed."
+  Description: "Don't use begin blocks when they are not needed."
   Enabled: true
 
 Style/RedundantException:
@@ -379,19 +378,19 @@ Style/RedundantException:
   Enabled: true
 
 Style/RedundantReturn:
-  Description: "Dont use return where its not required."
+  Description: "Don't use return where it's not required."
   Enabled: true
 
 Style/RedundantSelf:
-  Description: "Dont use self where its not needed."
+  Description: "Don't use self where it's not needed."
   Enabled: true
 
 Style/RegexpLiteral:
   Description: >-
                  Use %r for regular expressions matching more than
-                 `MaxSlashes` / characters.
+                 `MaxSlashes` '/' characters.
                  Use %r only for regular expressions matching more than
-                 `MaxSlashes` / character.
+                 `MaxSlashes` '/' character.
   Enabled: true
 
 Style/RescueModifier:
@@ -403,7 +402,7 @@ Style/SelfAssignment:
   Enabled: true
 
 Style/Semicolon:
-  Description: "Dont use semicolons to terminate expressions."
+  Description: "Don't use semicolons to terminate expressions."
   Enabled: true
 
 Style/SignalException:
@@ -416,12 +415,6 @@ Style/SingleLineBlockParams:
 
 Style/SingleLineMethods:
   Description: "Avoid single-line methods."
-  Enabled: true
-
-Layout/SpaceBeforeFirstArg:
-  Description: >-
-                 Checks that exactly one space is used between a method name
-                 and the first argument for method calls without parentheses.
   Enabled: true
 
 Layout/SpaceAfterColon:
@@ -452,7 +445,7 @@ Layout/SpaceAfterSemicolon:
 
 Layout/SpaceBeforeBlockBraces:
   Description: >-
-                 Checks that the left block brace has or doesnt have space
+                 Checks that the left block brace has or doesn't have space
                  before it.
   Enabled: true
 
@@ -472,7 +465,7 @@ Layout/SpaceBeforeSemicolon:
 
 Layout/SpaceInsideBlockBraces:
   Description: >-
-                 Checks that block braces have or dont have surrounding space.
+                 Checks that block braces have or don't have surrounding space.
                  For blocks taking parameters, checks that the left brace has
                  or doesn"t have trailing space.
   Enabled: true
@@ -480,7 +473,7 @@ Layout/SpaceInsideBlockBraces:
 Layout/SpaceAroundEqualsInParameterDefault:
   Description: >-
                  Checks that the equals signs in parameter default assignments
-                 have or dont have surrounding space depending on
+                 have or don't have surrounding space depending on
                  configuration.
   Enabled: true
 
@@ -493,7 +486,7 @@ Layout/SpaceAroundKeyword:
   Enabled: true
 
 Layout/SpaceInsideHashLiteralBraces:
-  Description: "Use spaces inside hash literal braces - or dont."
+  Description: "Use spaces inside hash literal braces - or don't."
   Enabled: true
 
 Layout/SpaceInsideParens:
@@ -517,17 +510,17 @@ Layout/TrailingBlankLines:
   Enabled: true
 
 Style/TrailingCommaInArguments:
-  Description: Checks for trailing comma in argument lists.
-  StyleGuide: #no-trailing-params-comma
+  Description: 'Checks for trailing comma in argument lists.'
+  StyleGuide: '#no-trailing-params-comma'
   Enabled: true
 
 Style/TrailingCommaInArrayLiteral:
-  Description: Checks for trailing comma in array literals.
-  StyleGuide: #no-trailing-array-commas
+  Description: 'Checks for trailing comma in array literals.'
+  StyleGuide: '#no-trailing-array-commas'
   Enabled: true
 
 Style/TrailingCommaInHashLiteral:
-  Description: Checks for trailing comma in hash literals.
+  Description: 'Checks for trailing comma in hash literals.'
   Enabled: true
 
 Layout/TrailingWhitespace:
@@ -554,7 +547,7 @@ Style/CommandLiteral:
 
 Style/VariableInterpolation:
   Description: >-
-                 Dont interpolate global, instance and class variables
+                 Don't interpolate global, instance and class variables
                  directly in strings.
   Enabled: true
 
@@ -640,7 +633,7 @@ Security/Eval:
   Enabled: true
 
 Lint/HandleExceptions:
-  Description: "Dont suppress exception."
+  Description: "Don't suppress exception."
   Enabled: true
 
 Lint/LiteralInInterpolation:

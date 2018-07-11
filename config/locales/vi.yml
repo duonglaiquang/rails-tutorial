@@ -1,6 +1,7 @@
 vi:
   application:
     ruby_on_rails: "Web mẫu Ruby on Rails"
+    user_error: "Không tìm thấy người "
 
   static_pages:
     home:
@@ -32,3 +33,8 @@ vi:
     new:
       title: "Đăng kí"
       info: "Đăng kí thành viên mới tại đây."
+      name: "Tên"
+      password: "Mật khẩu"
+      confirmation: "Xác nhận mật khẩu"
+      create: "Tạo tài khoản"
+      success: "Thành công!"
