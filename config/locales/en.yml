@@ -50,3 +50,5 @@ en:
       title: "Log in"
       logout: "Log out"
       new_user: "New user?"
+      remember_box: "Remember me"
+      remember_text: "Remember me on this computer"
