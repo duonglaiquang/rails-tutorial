@@ -49,3 +49,5 @@ vi:
       title: "Đăng nhập"
       logout: "Đăng xuất"
       new_user: "Người dùng mới?"
+      remember_box: "Nhớ mật khẩu"
+      remember_text: "Nhớ mật khẩu tại máy tính này"

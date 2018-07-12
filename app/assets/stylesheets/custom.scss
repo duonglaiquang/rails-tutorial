@@ -124,6 +124,21 @@ input {
   }
 }
 
+.checkbox {
+  margin-top: -10px;
+  margin-bottom: 10px;
+
+  span {
+    font-weight: normal;
+    margin-left: 20px;
+  }
+
+  .remember {
+    width: auto;
+    margin-left: 0 !important;
+  }
+}
+
 /* footer */
 
 footer {
