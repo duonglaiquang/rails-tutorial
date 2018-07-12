@@ -2,6 +2,11 @@ vi:
   application:
     ruby_on_rails: "Web mẫu Ruby on Rails"
     user_error: "Không tìm thấy người "
+    invalid_login: "Email hoặc Mật khẩu không đúng"
+    account: "Tài khoản"
+    profile: "Trang cá nhân"
+    setting: "Thiết lập"
+    user: "Người dùng"
 
   static_pages:
     home:
@@ -38,3 +43,9 @@ vi:
       confirmation: "Xác nhận mật khẩu"
       create: "Tạo tài khoản"
       success: "Thành công!"
+
+  sessions:
+    new:
+      title: "Đăng nhập"
+      logout: "Đăng xuất"
+      new_user: "Người dùng mới?"

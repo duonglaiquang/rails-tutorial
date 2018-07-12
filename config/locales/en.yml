@@ -2,6 +2,11 @@ en:
   application:
     ruby_on_rails: "Ruby on Rails Tutorial Sample App"
     user_error: "User not found"
+    invalid_login: "Invalid email/password combination"
+    account: "Account"
+    profile: "Profile"
+    setting: "Setting"
+    user: "User"
 
   static_pages:
     home:
@@ -39,3 +44,9 @@ en:
       confirmation: "Confirmation"
       create: "Create my account"
       success: "Welcome to the Sample App!"
+
+  sessions:
+    new:
+      title: "Log in"
+      logout: "Log out"
+      new_user: "New user?"

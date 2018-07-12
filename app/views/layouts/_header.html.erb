@@ -7,6 +7,25 @@
         <li><%= link_to t("static_pages.help.title"), help_path %></li>
         <li><%= link_to t("static_pages.about.title"), about_path %></li>
         <li><%= link_to t("static_pages.contact.title"), contact_path %></li>
+        <% if logged_in? %>
+          <li><%= link_to t("application.user"), "#" %></li>
+          <li class="dropdown">
+            <%= link_to "#", class: "dropdown-toggle", "data-toggle": "dropdown" do %>
+              <%= t("application.account") %>
+              <b class="caret"></b>
+            <% end %>
+            <ul class="dropdown-menu">
+              <li><%= link_to t("application.profile"), current_user %></li>
+              <li><%= link_to t("application.setting"), "#" %></li>
+              <li class="divider"></li>
+              <li>
+                <%= link_to t("sessions.new.logout"), logout_path, method: :delete %>
+              </li>
+            </ul>
+          </li>
+        <% else %>
+          <li><%= link_to t("sessions.new.title"), login_path %></li>
+        <% end %>
         <li><%= link_to t("users.new.title"), signup_path %></li>
       </ul>
     </nav>
