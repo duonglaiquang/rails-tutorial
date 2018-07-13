@@ -5,8 +5,12 @@ vi:
     invalid_login: "Email hoặc Mật khẩu không đúng"
     account: "Tài khoản"
     profile: "Trang cá nhân"
+    profile_updated: "Cập nhật thành công"
     setting: "Thiết lập"
     user: "Người dùng"
+    delete_success: "Xóa thành công"
+    failed: "Lỗi !"
+    please_login: "Hãy đăng nhập tr"
 
   static_pages:
     home:
@@ -43,6 +47,19 @@ vi:
       confirmation: "Xác nhận mật khẩu"
       create: "Tạo tài khoản"
       success: "Thành công!"
+
+    edit:
+      title: "Sửa thông tin"
+      info: "Cập nhật thông tin người dùng"
+      save: "Lưu thay đổi"
+      change: "Thay đổi"
+
+    index:
+      title: "Danh sách người sử dụng"
+
+    user:
+      delete: "Xóa"
+      confirm: "Chắc chắn xóa ?"
 
   sessions:
     new:

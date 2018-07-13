@@ -5,8 +5,12 @@ en:
     invalid_login: "Invalid email/password combination"
     account: "Account"
     profile: "Profile"
+    profile_updated: "Profile Updated"
     setting: "Setting"
     user: "User"
+    delete_success: "Delete Successful"
+    failed: "Something went wrong !"
+    please_login: "Please log in"
 
   static_pages:
     home:
@@ -44,6 +48,19 @@ en:
       confirmation: "Confirmation"
       create: "Create my account"
       success: "Welcome to the Sample App!"
+
+    edit:
+      title: "Edit user"
+      info: "Update your profile"
+      save: "Save changes"
+      change: "Change"
+
+    index:
+      title: "All users"
+
+    user:
+      delete: "Delete"
+      confirm: "You sure?"
 
   sessions:
     new:
