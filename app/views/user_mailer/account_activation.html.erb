@@ -1,0 +1,9 @@
+<h1><%= t "static_pages.home.sample_app" %></h1>
+
+<p><%= t "mailer.hi" %> <%= @user.name %>,</p>
+
+<p>
+  <%= t "users.new.success" %> <%= t "mailer.click_link" %>
+</p>
+
+<%= link_to t("mailer.activate"), edit_account_activation_url(@user.activation_token, email: @user.email) %>

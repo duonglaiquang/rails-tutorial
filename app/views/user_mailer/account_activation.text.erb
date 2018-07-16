@@ -1,0 +1,5 @@
+<%= t "mailer.hi" %> <%= @user.name %>,
+
+<%= t "users.new.success" %> <%= t "mailer.click_link" %>
+
+<%= edit_account_activation_url @user.activation_token, email: @user.email %>

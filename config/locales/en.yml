@@ -69,3 +69,12 @@ en:
       new_user: "New user?"
       remember_box: "Remember me"
       remember_text: "Remember me on this computer"
+
+  mailer:
+    hi: "Hi"
+    click_link: "Click on the link below to activate your account:"
+    title: "Account activation"
+    email_activate: "Please check your email for activation link !"
+    activated_success: "Account activated!"
+    activated_warning: "Account not activated!"
+    activate: "Activate"

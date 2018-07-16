@@ -6,7 +6,7 @@ class UsersController < ApplicationController
 
   def show
     return if @user
-    flash[:danger] = t("application.user_error")
+    flash[:danger] = t "application.user_error"
     redirect_to home_path
   end
 
@@ -17,20 +17,19 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:new] = t "users.new.success"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t "mailer.email_activate"
+      redirect_to home_path
     else
       render :new
     end
   end
 
-  def edit;
-  end
+  def edit; end
 
   def update
     if @user.update_attributes user_params
-      flash[:success] = t("application.profile_updated")
+      flash[:success] = t "application.profile_updated"
       redirect_to @user
     else
       render :edit
@@ -43,9 +42,9 @@ class UsersController < ApplicationController
 
   def destroy
     if @user.destroy.destroyed?
-      flash[:success] = t("application.delete_success")
+      flash[:success] = t "application.delete_success"
     else
-      flash[:danger] = t("application.failed")
+      flash[:danger] = t "application.failed"
     end
     redirect_to users_path
   end
@@ -54,13 +53,13 @@ class UsersController < ApplicationController
 
   def user_params
     params.require(:user).permit :name, :email, :password,
-                                 :password_confirmation
+      :password_confirmation
   end
 
   def logged_in_user
     return if logged_in?
     store_location
-    flash[:danger] = t("application.please_login")
+    flash[:danger] = t "application.please_login"
     redirect_to login_path
   end
 
