@@ -11,6 +11,7 @@ vi:
     delete_success: "Xóa thành công"
     failed: "Lỗi !"
     please_login: "Hãy đăng nhập tr"
+    submit: "Gửi"
 
   static_pages:
     home:
@@ -71,9 +72,21 @@ vi:
 
   mailer:
     hi: "Chào"
-    click_link: "Nhấn vào đường link để kích hoạt tài khoản :"
+    click_link_activate: "Nhấn vào đường link để kích hoạt tài khoản :"
+    click_link_reset_pw: "Nhấn vào đường link để lấy lại mật khẩu :"
     title: "Kích hoạt tài khoản"
     email_activate: "Thư kích hoạt tài khoản đã được gửi về email của bạn"
     activated_success: "Kích hoạt thành công !"
     activated_warning: "Tài khoản chưa được kích hoạt !"
     activate: "Kích hoạt"
+    reset_pw_info: "Đường link chỉ có hiệu nghiệm trong 2 tiếng.
+                    Bỏ qua thư này nếu bạn không muốn thay đổi mật khẩu."
+
+  password_resets:
+    title: "Lấy lại mật khẩu "
+    info: "Kiểm tra hòm thư của bạn để reset mật khẩu"
+    invalid_email: "Không tìm thấy email"
+    update_pw: "Cập nhật mật khẩu "
+    pw_empty_alert: "Không thể để trống mật khẩu "
+    success: "Thay đổi thành công "
+    expired: "Đã hết thời hạn thay đổi mật khẩu "

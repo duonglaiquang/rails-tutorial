@@ -11,6 +11,7 @@ en:
     delete_success: "Delete Successful"
     failed: "Something went wrong !"
     please_login: "Please log in"
+    submit: "Submit"
 
   static_pages:
     home:
@@ -72,9 +73,22 @@ en:
 
   mailer:
     hi: "Hi"
-    click_link: "Click on the link below to activate your account:"
+    click_link_activate: "Click on the link below to activate your account:"
+    click_link_reset_pw: "To reset your password click the link below:"
     title: "Account activation"
     email_activate: "Please check your email for activation link !"
     activated_success: "Account activated!"
     activated_warning: "Account not activated!"
     activate: "Activate"
+    reset_pw_info: "This link will expire in two hours.
+                    If you did not request your password to be reset,
+                    please ignore this email and your password will stay as it is."
+
+  password_resets:
+    title: "Password reset"
+    info: "Email sent with password reset instructions"
+    invalid_email: "Email address not found"
+    update_pw: "Update Password"
+    pw_empty_alert: "Password cant be empty"
+    success: "Password has been reset"
+    expired: "Password reset has expired"
