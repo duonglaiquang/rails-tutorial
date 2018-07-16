@@ -68,3 +68,12 @@ vi:
       new_user: "Người dùng mới?"
       remember_box: "Nhớ mật khẩu"
       remember_text: "Nhớ mật khẩu tại máy tính này"
+
+  mailer:
+    hi: "Chào"
+    click_link: "Nhấn vào đường link để kích hoạt tài khoản :"
+    title: "Kích hoạt tài khoản"
+    email_activate: "Thư kích hoạt tài khoản đã được gửi về email của bạn"
+    activated_success: "Kích hoạt thành công !"
+    activated_warning: "Tài khoản chưa được kích hoạt !"
+    activate: "Kích hoạt"
