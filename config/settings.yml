@@ -4,4 +4,4 @@ user_setting:
   password_length_min: 6
   gravata_profile_size: 80
   gravata_index_size: 50
-
+  pw_expired_time: 2

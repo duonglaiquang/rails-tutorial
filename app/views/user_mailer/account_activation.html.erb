@@ -3,7 +3,7 @@
 <p><%= t "mailer.hi" %> <%= @user.name %>,</p>
 
 <p>
-  <%= t "users.new.success" %> <%= t "mailer.click_link" %>
+  <%= t "users.new.success" %> <%= t "mailer.click_link_activate" %>
 </p>
 
 <%= link_to t("mailer.activate"), edit_account_activation_url(@user.activation_token, email: @user.email) %>
