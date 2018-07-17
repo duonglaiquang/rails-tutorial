@@ -5,9 +5,7 @@ class UsersController < ApplicationController
   before_action :find_user, only: [:show, :edit, :update, :destroy]
 
   def show
-    return if @user
-    flash[:danger] = t "application.user_error"
-    redirect_to home_path
+    @microposts = @user.microposts.order_by_created_at.paginate page: params[:page], per_page: Settings.micropost.pagination
   end
 
   def new
@@ -25,7 +23,8 @@ class UsersController < ApplicationController
     end
   end
 
-  def edit; end
+  def edit;
+  end
 
   def update
     if @user.update_attributes user_params
@@ -37,7 +36,7 @@ class UsersController < ApplicationController
   end
 
   def index
-    @users = User.paginate page: params[:page]
+    @users = User.paginate page: params[:page], per_page: Settings.micropost.pagination
   end
 
   def destroy
@@ -52,15 +51,7 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit :name, :email, :password,
-      :password_confirmation
-  end
-
-  def logged_in_user
-    return if logged_in?
-    store_location
-    flash[:danger] = t "application.please_login"
-    redirect_to login_path
+    params.require(:user).permit :name, :email, :password, :password_confirmation
   end
 
   def correct_user
@@ -74,6 +65,6 @@ class UsersController < ApplicationController
 
   def find_user
     @user = User.find_by id: params[:id]
-    redirect_to home_path, alert: t("application.failed") if @user.nil?
+    redirect_to home_path, alert: t("application.user_error") if @user.nil?
   end
 end
