@@ -90,3 +90,13 @@ vi:
     pw_empty_alert: "Không thể để trống mật khẩu "
     success: "Thay đổi thành công "
     expired: "Đã hết thời hạn thay đổi mật khẩu "
+
+  microposts:
+    title: "Bài đăng"
+    posted_at: "Đã đăng %{time} trước"
+    create_success: "Tạo post thành công!"
+    delete_success: "Xóa post thành công!"
+    new: "Chia sẻ cảm nghĩ của bạn ..."
+    post: "Đăng"
+    feed: "Danh sách bài đăng"
+    picture_size_error: "Ảnh cần có dung lượng nhỏ hơn %{size}MB"

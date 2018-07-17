@@ -92,3 +92,13 @@ en:
     pw_empty_alert: "Password cant be empty"
     success: "Password has been reset"
     expired: "Password reset has expired"
+
+  microposts:
+    title: "micropost"
+    posted_at: "Posted %{time} ago"
+    create_success: "Micropost created!"
+    delete_success: "Micropost deleted!"
+    new: "Say somethings ..."
+    post: "Post"
+    feed: "Micropost Feed"
+    picture_size_error: "should be less than %{size}MB"
