@@ -5,6 +5,9 @@ user_setting:
   gravata_profile_size: 80
   gravata_index_size: 50
   pw_expired_time: 2
+  rela_pagination: 15
+
+g_follow_size: 30
 
 micropost:
   picture_size: 5

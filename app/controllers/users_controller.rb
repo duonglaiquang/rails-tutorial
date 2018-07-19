@@ -5,7 +5,8 @@ class UsersController < ApplicationController
   before_action :find_user, only: [:show, :edit, :update, :destroy]
 
   def show
-    @microposts = @user.microposts.order_by_created_at.paginate page: params[:page], per_page: Settings.micropost.pagination
+    @microposts = @user.microposts.order_by_created_at.paginate page: params[:page],
+                                                                per_page: Settings.micropost.pagination
   end
 
   def new
@@ -45,6 +46,22 @@ class UsersController < ApplicationController
       flash[:danger] = t "application.failed"
     end
     redirect_to users_path
+  end
+
+  def following
+    @title = t("relationships.following")
+    @user = User.find_by id: params[:id]
+    @users = @user.following.paginate page: params[:page],
+                                      per_page: Settings.user_setting.rela_pagination
+    render :show_follow
+  end
+
+  def followers
+    @title = t("relationships.followers")
+    @user = User.find_by id: params[:id]
+    @users = @user.followers.paginate page: params[:page],
+                                      per_page: Settings.user_setting.rela_pagination
+    render :show_follow
   end
 
   private

@@ -102,3 +102,9 @@ en:
     post: "Post"
     feed: "Micropost Feed"
     picture_size_error: "should be less than %{size}MB"
+
+  relationships:
+    follow: "Follow"
+    unfollow: "Unfollow"
+    following: "Following"
+    followers: "Followers"
