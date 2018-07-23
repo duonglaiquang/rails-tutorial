@@ -100,3 +100,9 @@ vi:
     post: "Đăng"
     feed: "Danh sách bài đăng"
     picture_size_error: "Ảnh cần có dung lượng nhỏ hơn %{size}MB"
+
+  relationships:
+    follow: "Theo dõi"
+    unfollow: "Bỏ theo dõi"
+    following: "Đang theo dõi"
+    followers: "Đang theo dõi bạn"

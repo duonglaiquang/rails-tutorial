@@ -210,6 +210,33 @@ aside {
   margin-top: 15px;
 }
 
+.stats {
+  margin-top: 0;
+  overflow: auto;
+  padding: 0;
+
+  a {
+    float: left;
+    border-left: 1px solid $gray-lighter;
+    color: gray;
+    padding: 0 10px;
+
+    &:first-child {
+      border: 0;
+      padding-left: 0;
+    }
+
+    &:hover {
+      color: blue;
+      text-decoration: none;
+    }
+  }
+
+  strong {
+    display: block;
+  }
+}
+
 /* Users index */
 
 .users {
